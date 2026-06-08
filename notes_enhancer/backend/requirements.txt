@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-multipart
+mlx-whisper
+anthropic
+sse-starlette
+pyannote.audio
+jellyfish

@@ -141,6 +141,131 @@ button:disabled {
   font-size: 0.9rem;
 }
 
+textarea.roster-input {
+  font-size: 0.875rem;
+  background: #fff;
+  rows: 3;
+}
+
+.transcript-segments {
+  max-height: 320px;
+  overflow-y: auto;
+  background: #fafafa;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.segment {
+  display: flex;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.segment-time {
+  color: #86868b;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  min-width: 40px;
+  flex-shrink: 0;
+}
+
+.segment-speaker {
+  color: #0071e3;
+  font-weight: 600;
+  font-size: 0.8rem;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.segment-text {
+  color: #424245;
+}
+
+.stage-dropdown {
+  margin-bottom: 8px;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stage-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: #f5f5f7;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  list-style: none;
+}
+
+.stage-summary::-webkit-details-marker {
+  display: none;
+}
+
+.stage-summary::before {
+  content: "▶";
+  font-size: 0.7rem;
+  margin-right: 8px;
+  transition: transform 0.15s;
+}
+
+details[open] > .stage-summary::before {
+  transform: rotate(90deg);
+}
+
+.stage-count {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #86868b;
+}
+
+.stage-dropdown > .transcript-segments {
+  border: none;
+  border-top: 1px solid #d2d2d7;
+  border-radius: 0;
+  max-height: 240px;
+}
+
 input[type="file"] {
   font-size: 0.9rem;
+}
+
+.step > details {
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-container {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #e8e8ed;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #0071e3;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.8rem;
+  color: #6e6e73;
+  white-space: nowrap;
 }
